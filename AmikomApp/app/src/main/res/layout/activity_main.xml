@@ -1,42 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="net.irbatkhoiri.amikomapp.MainActivity">
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/home"
+        android:text="Hello World!" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/usr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="169dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="User Name" />
+        android:hint="Username"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/editText"
-        android:layout_marginTop="80dp"
+        android:layout_alignLeft="@+id/usr"
+        android:layout_alignStart="@+id/usr"
+        android:layout_below="@+id/usr"
+        android:layout_marginTop="31dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Password" />
+        android:hint="Password"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-       android:textColor="#000000"
-        android:backgroundTint="#87cc62"
+        android:layout_alignEnd="@+id/pwd"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_alignRight="@+id/pwd"
+        android:layout_alignStart="@+id/pwd"
+        android:layout_below="@+id/pwd"
+        android:layout_marginTop="26dp"
         android:hint="Login"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true" />
+        android:backgroundTint="#87cc62"
+        android:textColor="#000000"
+
+        />
+
 </RelativeLayout>
+
+
